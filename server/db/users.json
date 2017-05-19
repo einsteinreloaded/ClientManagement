@@ -1,0 +1,157 @@
+[
+  {
+     "ClientId": 100,
+      "FirstName":"User1",
+      "LastName":"Name1",
+      "Email":"user1@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Active"
+     
+   },
+{
+         "ClientId": 101,
+      "FirstName":"User2",
+      "LastName":"Name2",
+      "Email":"user2@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Passive"
+     
+   },
+{     
+    "ClientId": 102,
+      "FirstName":"User3",
+      "LastName":"Name3",
+      "Email":"user3@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Pipeline"
+     
+     
+   },
+   {     
+    "ClientId": 103,
+      "FirstName":"User4",
+      "LastName":"Name4",
+      "Email":"user4@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Prospect"
+     
+     
+   },
+    {     
+    "ClientId": 104,
+      "FirstName":"User5",
+      "LastName":"Name5",
+      "Email":"user5@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Active"
+     
+     
+   },
+      {     
+    "ClientId": 105,
+      "FirstName":"User6",
+      "LastName":"Name6",
+      "Email":"user6@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Prospect"
+     
+     
+   },  
+   {     
+    "ClientId": 106,
+      "FirstName":"User7",
+      "LastName":"Name7",
+      "Email":"user7@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Passive"
+   },
+    {     
+    "ClientId": 107,
+      "FirstName":"User8",
+      "LastName":"Name8",
+      "Email":"user8@abc.com",
+      "Phone":"1234567890",
+      "Business":"Commodities",
+      "BankAcNo":"1234",
+      "Address":{
+          "Street1":"qwe",
+          "Street2":"asd",
+          "City":"asdqwe",
+          "State":"poiuy",
+          "Country":"defks",
+          "pincode":"898988"
+      },
+      "status": "Pipeline"
+   }
+
+]
