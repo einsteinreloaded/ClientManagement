@@ -2,6 +2,7 @@ var express = require('express'),
   app = express(),
   port = process.env.PORT || 8800;
 var http = require('http');
+let users = [];
 
 const UserFns=require("./userapi.js");
 
@@ -17,6 +18,7 @@ app.get('/users', function (req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
     UserFns.getUsers(dbUrl).then((response)=>{
       res.send(response.data);
+      users = response.data;
     }).catch(err=>{
         res.send("Unexpected Error!!");
     });
