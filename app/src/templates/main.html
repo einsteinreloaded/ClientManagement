@@ -1,6 +1,24 @@
 <div >
 {{mainCtrl.text}}
-
-<span ng-repeat="client in mainCtrl.CommonUtilServicePtr.clientList">{{client.FirstName}}</span>
-
+<table>
+    
+    <tr>
+        <th>Client ID</th>
+        <th>Name</th>
+        <th>Business name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>Actions</th>
+    </tr>
+    <tr ng-repeat="client in mainCtrl.CommonUtilServicePtr.clientList">
+    <td>{{client.ClientId}} </td>
+    <td>{{client.FirstName}} {{client.LastName}} </td>
+    <td>{{client.Business}} </td>
+    <td>{{client.Email}} </td>
+    <td>{{client.Phone}} </td>
+    <td>{{client.Address.City}} </td>
+    <td><a href="/edit/{{client.ClientId}}">edit</a><a href="/view/{{client.ClientId}}">view</a><a href ng-click="deleteClient(client.ClientId)">delete</a></td>
+    </tr>
+</table>
 </div>

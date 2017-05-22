@@ -24,7 +24,7 @@ this.clientIdGenerator=function(){
 
     this.deleteClient=function(clientId){
         this.clientList=this.clientList.filter((client)=>{
-            return client.ClientId==clientId;
+            return client.ClientId!=clientId;
         });
     }
 

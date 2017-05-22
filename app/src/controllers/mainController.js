@@ -5,6 +5,9 @@ module.exports=function(app){
         vm.text = "Dashboard content";
         vm.CommonUtilServicePtr=CommonUtilService;
         CommonUtilService.getClientList();
+        $scope.deleteClient=function(clientid){
+            CommonUtilService.deleteClient(clientid);
+        }
     });
 
 }
