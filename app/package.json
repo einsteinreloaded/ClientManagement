@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "a client management app",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einsteinreloaded/ClientManagement.git"
+  },
+  "author": "anish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/einsteinreloaded/ClientManagement/issues"
+  },
+  "homepage": "https://github.com/einsteinreloaded/ClientManagement#readme",
+  "devDependencies": {
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
