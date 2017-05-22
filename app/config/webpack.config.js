@@ -3,6 +3,9 @@ const path = require('path');
 module.exports={
     devtool: 'eval',
     entry:'./src/app.js',
+    devServer: {
+        historyApiFallback: true
+    },
     output: {
     // build files into a real folder
     path: path.resolve('dist'),
@@ -19,6 +22,7 @@ resolve: {
       // absolute paths FTW!
       'src',
       'node_modules',
+      'config'
     ],
   }
 

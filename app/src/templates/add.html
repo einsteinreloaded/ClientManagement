@@ -1,0 +1,48 @@
+
+<form ng-submit="addEditClient(client)">
+    <div>
+        <label>First Name</label> <input ng-model="client.FirstName" type="text" required />
+    </div>
+   <div>
+     <label>Last Name</label> <input ng-model="client.LastName" type="text" />
+   </div>
+  <div>
+      <label>Email</label>  <input ng-model="client.Email" type="email" required />
+  </div>
+  <div>
+      <label>Phone</label>  <input ng-model="client.Phone" type="number" required />
+  </div>
+ <div>
+    <label>Business</label>   <input ng-model="client.Business" type="text" required />
+ </div>
+ <div>
+ <label>Bank Account Number</label>   <input ng-model="client.BankAcNo" type="text" required />
+ </div>
+ <div>
+ <label>Address</label>   
+ </div>
+ <div>
+ <label>Street1</label> <input ng-model="client.Address.Street1" type="text" required />
+ </div>
+<div>
+ <label>Street2</label>   <input ng-model="client.Address.Street2" type="text" />
+</div>
+<div>
+<label>City</label>    <input ng-model="client.Address.City" type="text" required />
+</div>
+<div>
+<label>State</label>  <input ng-model="client.Address.State" type="text" required />
+</div>
+<div>
+<label>Country</label>    <input ng-model="client.Address.Country" type="text" required />
+</div>
+<div>
+ <label>Pincode</label>   <input ng-model="client.Address.pincode" type="number" required />
+</div>
+<div>
+  <label>Status</label>  <select ng-model="client.status" ng-options="status as status for status in statuses" required>
+        <option value="" disabled selected>Select Status</option>
+    </select>
+</div>
+<button type="submit">Add</button>
+</form>
