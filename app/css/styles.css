@@ -1,0 +1,16 @@
+.pointer{
+    cursor: pointer;
+}
+
+.tile{
+    height: 100px;
+    background: #ccc;
+    margin: 5px;
+
+}
+
+.tile-container{
+    padding-left: 60px;
+    margin-bottom: 30px;
+
+}

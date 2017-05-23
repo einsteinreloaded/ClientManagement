@@ -1,24 +1,43 @@
-<div >
-{{mainCtrl.text}}
-<table>
-    
+<div class="container">
+    <div class="container-fluid tile-container">
+        <div class="row">
+            <div class="col-md-2 tile" ng-repeat="obj in mainCtrl.CommonUtilServicePtr.countArray">
+                <div class="container-fluid text-center">
+                    <span class="h3 title col-md-12">{{obj.title}}</span>
+                    <span class="count col-md-12">{{obj.count}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<table class="table table-responsive">
+    <thead>
     <tr>
-        <th>Client ID</th>
-        <th>Name</th>
-        <th>Business name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>City</th>
+        <th ng-click="sort('ClientId')" class="pointer">Client ID</th>
+        <th ng-click="sort(['FirstName','LastName'])" class="pointer">Name</th>
+        <th ng-click="sort('Business')" class="pointer">Business name</th>
+        <th ng-click="sort('Email')" class="pointer">Email</th>
+        <th ng-click="sort('Phone')" class="pointer">Phone</th>
+        <th ng-click="sort('Address.City')" class="pointer">City</th>
         <th>Actions</th>
     </tr>
-    <tr ng-repeat="client in mainCtrl.CommonUtilServicePtr.clientList">
+    </thead>
+    <tbody>
+    <tr ng-repeat="client in mainCtrl.CommonUtilServicePtr.clientList | orderBy: key : flag">
     <td>{{client.ClientId}} </td>
     <td>{{client.FirstName}} {{client.LastName}} </td>
     <td>{{client.Business}} </td>
     <td>{{client.Email}} </td>
     <td>{{client.Phone}} </td>
     <td>{{client.Address.City}} </td>
-    <td><a href="/edit/{{client.ClientId}}">edit</a><a href="/view/{{client.ClientId}}">view</a><a href ng-click="deleteClient(client.ClientId)">delete</a></td>
+    <td>
+        <ul class="list-inline">
+  <li><a href="/edit/{{client.ClientId}}"><span class="glyphicon glyphicon-edit"></span></a></li>
+  <li><a href="/view/{{client.ClientId}}"><span class="glyphicon glyphicon-eye-open"></span></a></li>
+  <li><a href ng-click="deleteClient(client.ClientId)"><span class="glyphicon glyphicon-trash"></span></a></li>
+</ul>  
+        
+    </td>
     </tr>
+    </tbody>
 </table>
 </div>

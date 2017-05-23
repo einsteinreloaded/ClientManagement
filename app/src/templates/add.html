@@ -1,48 +1,80 @@
 
-<form ng-submit="addEditClient(client)">
-    <div>
-        <label>First Name</label> <input ng-model="client.FirstName" type="text" required />
+<form class="container" ng-submit="addEditClient(client)">
+
+
+<div class="row">
+    <div class="form-group col-xs-4">
+        <label>First Name</label> <input ng-model="client.FirstName" type="text" class="form-control" required />
     </div>
-   <div>
-     <label>Last Name</label> <input ng-model="client.LastName" type="text" />
+    </div>
+
+<div class="row">
+   <div class="form-group col-xs-4">
+     <label>Last Name</label> <input ng-model="client.LastName" class="form-control" type="text" />
    </div>
-  <div>
-      <label>Email</label>  <input ng-model="client.Email" type="email" required />
+</div>
+<div class="row">
+  <div class="form-group col-xs-4">
+      <label>Email</label>  <input ng-model="client.Email" type="email" class="form-control" required />
   </div>
-  <div>
-      <label>Phone</label>  <input ng-model="client.Phone" type="number" required />
+</div>
+<div class="row">
+  <div class="form-group col-xs-4">
+      <label>Phone</label>  <input ng-model="client.Phone" class="form-control" type="number" required />
   </div>
- <div>
-    <label>Business</label>   <input ng-model="client.Business" type="text" required />
+</div>
+<div class="row">
+ <div class="form-group col-xs-4">
+    <label>Business</label>   <input ng-model="client.Business" class="form-control" type="text" required />
  </div>
- <div>
- <label>Bank Account Number</label>   <input ng-model="client.BankAcNo" type="text" required />
+</div>
+<div class="row">
+ <div class="form-group col-xs-4">
+ <label>Bank Account Number</label>   <input ng-model="client.BankAcNo" type="text" class="form-control" required />
  </div>
- <div>
+</div>
+<div class="row">
+ <div class="form-group col-xs-4">
  <label>Address</label>   
  </div>
- <div>
- <label>Street1</label> <input ng-model="client.Address.Street1" type="text" required />
+</div>
+<div class="row">
+ <div class="form-group col-xs-4">
+ <label>Street1</label> <input ng-model="client.Address.Street1" class="form-control" type="text" required />
  </div>
-<div>
- <label>Street2</label>   <input ng-model="client.Address.Street2" type="text" />
 </div>
-<div>
-<label>City</label>    <input ng-model="client.Address.City" type="text" required />
+<div class="row">
+<div class="form-group col-xs-4">
+ <label>Street2</label>   <input ng-model="client.Address.Street2" class="form-control" type="text" />
 </div>
-<div>
-<label>State</label>  <input ng-model="client.Address.State" type="text" required />
 </div>
-<div>
-<label>Country</label>    <input ng-model="client.Address.Country" type="text" required />
+<div class="row">
+<div class="form-group col-xs-4">
+<label>City</label>    <input ng-model="client.Address.City" class="form-control" type="text" required />
 </div>
-<div>
- <label>Pincode</label>   <input ng-model="client.Address.pincode" type="number" required />
 </div>
-<div>
-  <label>Status</label>  <select ng-model="client.status" ng-options="status as status for status in statuses" required>
+<div class="row">
+<div class="form-group col-xs-4">
+<label>State</label>  <input ng-model="client.Address.State" class="form-control" type="text" required />
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-xs-4">
+<label>Country</label>    <input ng-model="client.Address.Country" class="form-control" type="text" required />
+</div>
+</div>
+<div class="row">
+<div class="form-group col-xs-4">
+ <label>Pincode</label>   <input ng-model="client.Address.pincode" class="form-control" type="number" required />
+</div>
+</div>
+<div class="row">
+<div class="form-group col-xs-4">
+  <label>Status</label>  <select ng-model="client.status" ng-options="status as status for status in statuses" class="form-control" required>
         <option value="" disabled selected>Select Status</option>
     </select>
 </div>
-<button type="submit">Save</button>
+</div>
+<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
 </form>

@@ -25,7 +25,7 @@ app.config(function($routeProvider,$locationProvider) {
         controllerAs:"editCtrl"
     })
     .when("/view/:id", {
-        templateUrl : "src/templates/add.html",
+        templateUrl : "src/templates/view.html",
         controller: "viewController",
         controllerAs:"viewCtrl"
     })

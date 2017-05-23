@@ -1,5 +1,11 @@
-<div class="header">
-<p>{{hctrl.headerText}}</p>
-<a href="/add" ng-show="hctrl.isAddVisible">Add Client</a>
-<a href="/" ng-show="hctrl.isbackbuttonvisible">DashBoard</a>
-</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Client Mangement App</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/add" ng-show="hctrl.isAddVisible">Add Client</a></li>
+      <li><a href="/" ng-show="hctrl.isbackbuttonvisible">Back to DashBoard</a></li>
+    </ul>
+  </div>
+</nav>

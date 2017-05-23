@@ -7,9 +7,8 @@ module.exports=function(app){
         $scope.addEditClient=function(client){
             CommonUtilService.addClient(client);
             $scope.client={};
+            alert("Client Added!");
         }
-
-
     });
 
 }

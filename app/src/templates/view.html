@@ -1,17 +1,68 @@
-<div>
-Id: {{client.ClientId}}
-First Name: {{client.FirstName}}
-Last Name: {{client.LastName}}
-Email: {{client.Email}}
-Phone: {{client.Phone}}
-Business: {{client.Business}}
-Bank Account Number: {{client.BankAcNo}}
-Address:
-Street1: {{client.Address.Street1}}
-Street2: {{client.Address.Street2}}
-City: {{client.Address.City}}
-State: {{client.Address.State}}
-Country: {{client.Address.Country}}
-PinCode: {{client.Address.pincode}}
-Status: {{client.status}}
+<div class="container">
+<table class="table table-responsive">
+    <tbody>
+            <tr>
+                <th>Id </th>
+                <td>{{client.ClientId}}</td>
+            </tr>   
+        <tr>
+                <th>First Name </th>
+                <td>{{client.FirstName}}</td>
+        </tr> 
+        <tr>
+                <th>Last Name</th>
+                <td>{{client.LastName}}</td>
+        </tr> 
+        <tr>
+                <th>Email</th>
+                <td>{{client.Email}}</td>
+            </tr> 
+        <tr>
+                <th>Phone</th>
+                <td>{{client.Phone}}</td>
+        </tr>
+
+        <tr>
+                <th>Business</th>
+                <td> {{client.Business}}</td>
+        </tr> 
+        <tr>
+                <th>Bank Account Number</th>
+                <td>{{client.BankAcNo}}</td>
+            </tr> 
+        <tr>
+                <th>Address</th>
+                <td></td>
+            </tr> 
+        <tr>
+                <th>Street1</th>
+                <td>{{client.Address.Street1}}</td>
+            </tr> 
+        <tr>
+                <th>Street2</th>
+                <td>{{client.Address.Street2}}</td>
+            </tr> 
+        <tr>
+                <th>City</th>
+                <td>{{client.Address.City}}</td>
+        </tr> 
+        <tr>
+                <th>State</th>
+                <td>{{client.Address.State}}</td>
+            </tr> 
+        <tr>
+                <th>Country</th>
+                <td>{{client.Address.Country}}</td>
+            </tr> 
+        <tr>
+                <th>PinCode</th>
+                <td>{{client.Address.pincode}}</td>
+            </tr> 
+        <tr>
+                <th>Status</th>
+                <td>{{client.status}}</td>
+            </tr>
+    </tbody>
+</table>
+<button ng-click="deleteClient()" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button>
 </div>

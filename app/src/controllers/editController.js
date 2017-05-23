@@ -7,11 +7,9 @@ module.exports=function(app){
         $scope.statuses=['Active', 'Passive', 'Pipeline', 'Prospect'];
         $scope.client=CommonUtilService.getClientById(clientId);
         $scope.addEditClient=function(client){
-            console.log(client);
             CommonUtilService.editClient(client);
+            alert("Edits Saved!");
         }
-
-
     });
 
 }
