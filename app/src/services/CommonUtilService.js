@@ -30,6 +30,7 @@ app.service('CommonUtilService',function($http){
         this.clientList=this.clientList.filter((client)=>{
             return client.ClientId!=clientId;
         });
+         this.buildClientCountArray();
     }
 
     this.editClient=function(client){// updates the particular client in the list 
