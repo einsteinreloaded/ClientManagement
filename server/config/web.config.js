@@ -1,5 +1,12 @@
- const server_urls={
- dbUrl: "http://localhost:8800/users.json"
-}
+ const server_config={
+    dbUrl: "http://localhost:8800/users.json",
 
-module.exports = server_urls;
+    firebaseConfig: {// replace with firebase db config here
+        apiKey: 'xxxxxx',
+        authDomain: 'xxxx',
+        databaseURL: 'xxx',
+        storageBucket: 'xxx',
+        messagingSenderId: 'xxx'
+    }
+ }
+module.exports = server_config;

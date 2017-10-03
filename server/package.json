@@ -19,7 +19,9 @@
   "homepage": "https://github.com/einsteinreloaded/ClientManagement/#readme",
   "dependencies": {
     "axios": "^0.16.1",
-    "express": "^4.15.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.15.2",
+    "firebase": "^4.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

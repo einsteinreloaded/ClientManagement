@@ -13,7 +13,6 @@ app.service('CommonUtilService',function($http){
     this.getClientList=function(){//gets client list from server on first load and sets it to the clientList
         if(!!!this.clientList){
             return $http.get(url + "users").then((res)=>{
-
                     this.clientList = res.data;
                     this.buildClientCountArray();
                     return res.data;
@@ -24,8 +23,13 @@ app.service('CommonUtilService',function($http){
     this.addClient=function(client){// adds new client to the list
         client.ClientId=this.clientIdGenerator();//assigning id to client object
         this.clientList.push(client);
+        this.saveToServer();
     }
-
+    this.saveToServer=function(){//save changes to server
+        $http.post(url + "users/add",this.clientList).then((res)=>{
+                    return res.data;
+        });
+    }
     this.deleteClient=function(clientId){// deletes client from the list
         this.clientList=this.clientList.filter((client)=>{
             return client.ClientId!=clientId;
@@ -37,6 +41,7 @@ app.service('CommonUtilService',function($http){
         this.clientList=this.clientList.map(function(user){
             return client.ClientId==user.ClientId?client:user;
         })
+        this.saveToServer();
     }
 
     this.getClientById=function(clientId){// gets a particular client by client id
